@@ -1,0 +1,15 @@
+.paymentMethodsList {
+  display: flex;
+  column-gap: 10px;
+}
+
+.paymentMethodImgWrapper {
+  display: flex;
+  align-items: center;
+  width: 45px;
+}
+.paymentMethodImg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

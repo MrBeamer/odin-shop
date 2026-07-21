@@ -1,0 +1,22 @@
+.footer {
+}
+.totalRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 0px 10px;
+}
+.totalLabel {
+  font-size: 16px;
+}
+.totalPrice {
+}
+.checkoutBtn {
+  color: #fff;
+  background-color: #1c1c1c;
+  max-width: 100%;
+  width: 95%;
+  margin: 15px 10px 20px 10px;
+  padding: 10px 20px;
+  border: none;
+}

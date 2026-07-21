@@ -1,0 +1,88 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 30px 30px 30px;
+  background-color: #0a0a0a;
+}
+
+.footerHeadline {
+  color: #f2f0ec;
+  margin-bottom: 8px;
+}
+
+.footerTop {
+  /* display: flex;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerItem {
+  list-style: none;
+  color: #9a9992;
+}
+
+.footerMid {
+  /* display: flex;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: solid 1px #2a2a2a;
+  border-top: solid 1px #2a2a2a;
+  padding: 25px 0;
+  margin: 28px 0;
+}
+
+.footerBottom {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+/* --footer-chip-bg: #1a1a1a;  logo chip background  */
+
+.logoWrapper {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.copyRightContainer {
+}
+
+.copyRightText {
+  color: #6e6d68;
+}
+
+.paymentMethodsList,
+.partnerList {
+  display: flex;
+  column-gap: 10px;
+}
+
+.partnerImgWrapper,
+.paymentMethodImgWrapper {
+  display: flex;
+  align-items: center;
+  width: 45px;
+}
+.paymentMethodImg,
+.partnerImg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

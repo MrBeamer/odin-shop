@@ -1,0 +1,79 @@
+.cartItem {
+  display: flex;
+  column-gap: 1.5rem;
+  margin-bottom: 33px;
+}
+
+.cartItem:last-child {
+  margin-bottom: 0;
+}
+
+.imgContainer {
+  width: 70px;
+  background-color: #f2f3f4;
+}
+.productImg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.productTitle {
+  font-size: 16px;
+  color: #0a0a0a;
+  line-height: 1.2;
+}
+
+.productPrice {
+  color: rgb(28 28 28);
+  font-size: 0.7rem;
+  line-height: 1.2;
+  margin: 5px 0;
+}
+
+.productCategory {
+  color: #6b6b6b;
+  font-size: 0.625rem;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.cartItemControls {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.quantityControls {
+  display: flex;
+  border: 1px solid rgb(221, 221, 221);
+  align-items: center;
+  justify-content: center;
+}
+
+.btnRemove {
+  background-color: transparent;
+  border: none;
+  color: #0a0a0a;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btnDecrease {
+  background-color: transparent;
+  border: none;
+  color: #0a0a0a;
+  font-size: 18px;
+  padding: 10px 30px 10px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btnIncrease {
+  background-color: transparent;
+  border: none;
+  color: #0a0a0a;
+  font-size: 18px;
+  padding: 10px 10px 10px 30px;
+  text-align: center;
+  cursor: pointer;
+}

@@ -1,0 +1,46 @@
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 25px 50px 15px 50px;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  font-size: 16px;
+  color: #0a0a0a;
+
+  i {
+    font-size: 21px;
+  }
+}
+
+.navListLeft {
+  justify-content: flex-start;
+}
+
+.navListRight {
+  justify-content: flex-end;
+}
+
+.logoWrapper {
+  width: 100%;
+  /* width: 190px; */
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.shoppingCart {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}

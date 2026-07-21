@@ -1,0 +1,16 @@
+.topbar {
+  background-color: #1c1c1c;
+  min-height: 40px;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.5px solid #2a2a2a;
+}
+
+.message {
+  text-align: center;
+  padding: 8px;
+  font-size: 12px;
+}

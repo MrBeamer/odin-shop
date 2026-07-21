@@ -1,0 +1,9 @@
+.heroVideo {
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover; /* not contain, in most cases */
+  /* z-index: -1; */
+}
