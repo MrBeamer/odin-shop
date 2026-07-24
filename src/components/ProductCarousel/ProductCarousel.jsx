@@ -12,6 +12,7 @@ export default function ProductCarousel({ products, onCartAdd }) {
               key={product.id}
               product={product}
               onCartAdd={onCartAdd}
+              isRounded={true}
             />
           );
         })}

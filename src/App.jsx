@@ -1,18 +1,17 @@
 import { useState } from "react";
 import "./App.css";
-import { useProducts } from "../src/utils/useProducts";
 import { Routes, Route } from "react-router";
 import Navigation from "./components/Navigation/Navigation";
 import Home from "./pages/Home/Home";
 import TopBar from "./components/Topbar/Topbar";
 import Footer from "./components/Footer/Footer";
 import Cart from "./components/Cart/Cart";
+import ProductListingPage from "./pages/ProductListingPage/ProductListingPage";
 
 function App() {
   const [open, setOpen] = useState(false);
   const [cart, setCart] = useState([]);
 
-  // Define clear handler functions
   const handleOpenCart = () => {
     setOpen(true);
   };
@@ -24,6 +23,7 @@ function App() {
     );
     // Open cart when Item is added to cart
     handleOpenCart();
+    //when duplicate add one to the quantity
     if (isDuplicate) {
       setCart((prevCart) => {
         return prevCart.map((productCart) => {
@@ -36,7 +36,7 @@ function App() {
       });
       return;
     }
-
+    //if no duplicate add product and add to this product quantity 1
     setCart((prevCart) => [{ ...product, quantity: 1 }, ...prevCart]);
   };
 
@@ -94,6 +94,10 @@ function App() {
       <main id="center">
         <Routes>
           <Route path="/" element={<Home onCartAdd={handleAddCart} />}></Route>
+          <Route
+            path=":category"
+            element={<ProductListingPage onCartAdd={handleAddCart} />}
+          ></Route>
         </Routes>
       </main>
       <Footer />

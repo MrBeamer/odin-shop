@@ -50,11 +50,11 @@ export default function Footer() {
         <div className={styles.footerColumn}>
           <h3 className={styles.footerHeadline}>Shopping</h3>
           <ul className={styles.footerList}>
-            <li className={styles.footerItem}>TikTok</li>
-            <li className={styles.footerItem}>Instagram</li>
-            <li className={styles.footerItem}>Youtube</li>
-            <li className={styles.footerItem}>Facebook</li>
-            <li className={styles.footerItem}>Pinterest</li>
+            <li className={styles.footerItem}>All Products</li>
+            <li className={styles.footerItem}>New Arrivals</li>
+            <li className={styles.footerItem}>Men</li>
+            <li className={styles.footerItem}>Women</li>
+            <li className={styles.footerItem}>Jewelry</li>
           </ul>
         </div>
       </div>

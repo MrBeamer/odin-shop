@@ -1,0 +1,22 @@
+.container {
+  padding: 60px 0;
+}
+
+.content {
+  padding-left: 60px;
+}
+
+.headline {
+  margin-bottom: 25px;
+}
+.description {
+  margin-bottom: 50px;
+  max-width: 825px;
+}
+
+.productListingGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 3px;
+  row-gap: 35px;
+}

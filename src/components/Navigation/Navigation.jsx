@@ -1,21 +1,25 @@
 import styles from "./Navigation.module.css";
 import logoDark from "../../assets/logo-dark.svg";
 import { calcTotalQuantity } from "../../utils/helper";
+import { NavLink } from "react-router";
 
 export default function Navigation({ onCartClick, cart }) {
   return (
     <nav className={styles.nav}>
       <ul className={`${styles.navList} ${styles.navListLeft}`}>
-        <li className={styles.navItem}>New Arrivals</li>
-        <li className={styles.navItem}>Highlights</li>
-        <li className={styles.navItem}>Men</li>
-        <li className={styles.navItem}>Women</li>
-        <li className={styles.navItem}></li>
-        <li className={styles.navItem}></li>
+        <NavLink to="/men" className={styles.navItem}>
+          Men
+        </NavLink>
+        <NavLink to="/women" className={styles.navItem}>
+          Women
+        </NavLink>
+        <NavLink to="/jewelery" className={styles.navItem}>
+          Jewelery
+        </NavLink>
       </ul>
-      <div className={styles.logoWrapper}>
+      <NavLink to="/" className={styles.logoWrapper}>
         <img className={styles.logo} src={logoDark} alt="Sora Logo" />
-      </div>
+      </NavLink>
       <ul className={`${styles.navList} ${styles.navListRight}`}>
         <li>
           <i className="fa-brands fa-sistrix"></i>

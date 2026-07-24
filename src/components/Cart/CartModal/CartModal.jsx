@@ -6,7 +6,6 @@ import PaymentMethods from "../../PaymentMethods/PaymentMethods";
 
 export default function CartModal({ open, onClose, children, cart }) {
   const dialogRef = useRef(null);
-  console.log("Current open state:", open);
   useEffect(() => {
     if (open) {
       dialogRef.current.showModal();
